@@ -1,0 +1,56 @@
+{
+  "projects": [
+    {
+      "title": "Tinderfy",
+      "cardSide": "l",
+      "image": "https://cdn.dribbble.com/users/268236/screenshots/4650389/music_app_playlist_interaction_by_ehsan_rahimi.gif",
+      "intro": "A website that uses Spotify’s Web API to allow users to create their own playlists using a tinder-like swipe experience",
+      "description": "A website that uses Spotify’s Web API to allow users to create their own playlists using a tinder-like swipe experience. It was designed mobile-first and ...... My responsibilities were ....",
+      "skills": "Javascript, ReactJS, API requests, UI & UX design",
+      "tools": "Github, Postman",
+      "collaborators": "Elna Mattsson Johansson, Emma Johansson, Mikaela Persson",
+      "link": "http://tinderfy.herokuapp.com/",
+      "coursework": "Interaction Programming and the Dynamic Web @ KTH ",
+      "work": null
+    },
+    {
+      "title": "Explore Austin",
+      "cardSide": "r",
+      "image": "https://austinot.com/wp-content/uploads/2012/06/Downtown-Austin-Texas-1024x543.jpg",
+      "intro": "An iOS application that allows the users to explore different hiking trails around Austin, TX and plan hikes with friends",
+      "description": "an iOS application that allows the users to explore different hiking trails around Austin, TX and plan hikes with friends. ...... My responsibilities were ....",
+      "skills": "Swift, iOS development, Database setup and management",
+      "tools": "Xcode, GitLab, Postman",
+      "collaborators": "Lisa, Amiti, Wen",
+      "link": null,
+      "coursework": "iOS Mobile Computing @ The University of Texas at Austin",
+      "work": null
+    },
+    {
+      "title": "The Rullen Band",
+      "cardSide": "l",
+      "image": "https://www.star-center.org/wp-content/uploads/2018/04/STAR-Blog-Picture-April-2018-RW-1170x590.jpg",
+      "intro": "A design process for developing inclusive music instruments for children with disabilities",
+      "description": "A design process for developing inclusive music instruments for children with disabilities. The end result was a collaborative music experience for children with both cognitive and physical disabilities..... My responsibilities were...",
+      "skills": "Universal design, Pure Data programming, Sensor programming, Prototyping, Product design and development",
+      "tools": "Bela board, 3D printer",
+      "collaborators": "Jacob, Ihna, John",
+      "link": null,
+      "coursework": "IT design for disabled @ KTH",
+      "work": null
+    },
+    {
+      "title": "Artist recognition (ongoing)",
+      "cardSide": "r",
+      "image": "https://cdn.vox-cdn.com/thumbor/Hewb1o3p9jB1OYdnQFyZGK77gvM=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/9623191/Screenshot_20171106_184349.png",
+      "intro": "A program that uses machine learning to recognize the artist of a song",
+      "description": "A python program that uses machine learning to recognize the artist of a song. the model was trained on 20 artists.... My responsibilities were ....",
+      "skills": "Python, Sound processing, Voice recognition, Machine learning",
+      "tools": ":)",
+      "collaborators": "My Helmisaari, Hugo Nilsson",
+      "link": null,
+      "coursework": "Speech and Speaker Recognition @ KTH",
+      "work": null
+    }
+  ]
+}
