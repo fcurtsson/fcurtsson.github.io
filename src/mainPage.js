@@ -5,6 +5,10 @@ import Header from "./header";
 import "./index.css"
 
 class MainPage extends Component {
+
+    // how to deploy to github pages: https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f
+    //                                https://dev.to/javascripterika/deploy-a-react-app-as-a-github-user-page-with-yarn-3fka
+
     constructor(props) {
         super(props);
         this.state = {};
