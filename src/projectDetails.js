@@ -12,7 +12,7 @@ function ProjectDetails(props) {
         </div>)
     }
 
-    let {title, image, description, tools, skills, collaborators, coursework, work} = location.project
+    let {title, image, description, tools, skills, collaborators, coursework, work, color, button, buttonLink} = location.project
 
     let learnings = skills.split(",").map(skill => {
         return <li>{skill}</li>
@@ -20,6 +20,12 @@ function ProjectDetails(props) {
     let toolsUsed = tools.split(",").map(tool => {
         return <li>{tool}</li>
     })
+
+    let buttonDiv = ""
+
+    if (button !== null) {
+        buttonDiv = <a href={buttonLink} target="_blank"><button type="button" className="btn btn-light">{button}</button></a>
+    }
 
     return(
         <div className="row text-left px-0">
@@ -40,7 +46,8 @@ function ProjectDetails(props) {
                 <ul>
                     {toolsUsed}
                 </ul>
-                {collaborators !== null ? <p className="mt-4"><span className="text-orange">Collaborators:</span> {collaborators}</p> : ""}
+                {buttonDiv}
+                {collaborators !== null ? <p className="mt-4"><span style={{ color: color }}>Collaborators:</span> {collaborators}</p> : ""}
             </div>
         </div>
     )

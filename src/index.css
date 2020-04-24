@@ -59,8 +59,8 @@ code {
     object-fit: cover;
 }
 
-.text-orange {
-    color: #d96607;
+.name {
+    color: #7597CD;
 }
 
 ul.navbar-nav a:hover a:focus a:active {
