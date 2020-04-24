@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { Link, useLocation } from "react-router-dom";
 
 function ProjectDetails(props) {
 
     const location = useLocation();
+
+    //scroll to top
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    });
 
     if (location.project === undefined) {
         return(<div className="justify-content-center my-5 py-5">
@@ -22,7 +27,6 @@ function ProjectDetails(props) {
     })
 
     let buttonDiv = ""
-
     if (button !== null) {
         buttonDiv = <a href={buttonLink} target="_blank"><button type="button" className="btn btn-light">{button}</button></a>
     }
@@ -30,7 +34,7 @@ function ProjectDetails(props) {
     return(
         <div className="row text-left px-0">
             <div className="col-12">
-                <Link to={"/"}><i className="material-icons md-36 text-white leftOverImg">arrow_back_ios</i></Link>
+                <Link to={"/"}><i className="material-icons md-36 text-white leftOverImg px-2">arrow_back_ios</i></Link>
                 <img src={image} className="bannerImgSm d-lg-none"/>
                 <img src={image} className="bannerImgLg d-none d-lg-block"/>
                 <h1 className="offset-1 text-white leftDownOverImg">{title}</h1>
