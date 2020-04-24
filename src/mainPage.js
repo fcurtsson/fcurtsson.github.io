@@ -26,6 +26,7 @@ class MainPage extends Component {
                         <div className="row">
                             <div className="offset-lg-1 col-12 col-lg-4 mt-lg-4 px-4 px-lg-0 mb-5 order-lg-1 order-2">
                                 <h1 className="display-4 mt-5 mt-lg-5">Hello, World!</h1>
+                                <h5 className="font-italic"><span className="mb-2 bg-danger text-white px-2">--- Webpage under construction ---</span></h5>
                                 <p className="lead mt-4">I am <span className={"name font-weight-bold"}>Fanny Curtsson</span>, a student at the Media Technology programme at KTH in Stockholm, Sweden. Currently doing my masters in Interactive Media Technology with a specialization in sonic media.</p>
                                 <p>Skills and interests:</p>
                                 <ul>

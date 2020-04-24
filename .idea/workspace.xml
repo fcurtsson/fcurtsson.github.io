@@ -4,8 +4,6 @@
     <list default="true" id="2b4c082e-02e1-4c04-9281-b9bf7d7c998a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projectDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/projectDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/projectOverview.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/projectOverview.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
