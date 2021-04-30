@@ -1,0 +1,23 @@
+.bannerImgSm {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.bannerImgLg {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.leftOverImg {
+  position: absolute;
+  top: 16px;
+  left: 32px;
+}
+
+.leftDownOverImg {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}

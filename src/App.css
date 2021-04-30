@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  margin: 0;
+  font-family: 'Heebo', sans-serif;
+  color: #4d4d4d;
+}
+
+.container-fluid {
+  padding: 0;
 }
 
 .App-logo {
@@ -36,4 +43,3 @@
     transform: rotate(360deg);
   }
 }
-

@@ -1,88 +1,9 @@
 body {
-    margin: 0;
-    font-family: 'Heebo', sans-serif;
-    color: #4D4D4D;
-}
-
-code {
-    font-family: 'Heebo', sans-serif;
+  margin: 0;
+  font-family: 'Heebo', sans-serif;
+  color: #4d4d4d;
 }
 
 .container-fluid {
-    padding:0;
-}
-
-.navbar-toggler {
-    border: none;
-    outline: none;
-}
-
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(217,102,7, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    border: none;
-    outline: none;
-}
-
-.custom-toggler.navbar-toggler {
-    border-color: #d96607;
-    border: none;
-    outline: none;
-    color: #d96607;
-}
-
-.projectImgSm {
-    width: 100%;
-    height: auto;
-}
-
-.projectImgLg {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-
-.profileImg {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.bannerImgSm {
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.bannerImgLg {
-    height: 450px;
-    width: 100%;
-    object-fit: cover;
-}
-
-.name {
-    color: #7597CD;
-}
-
-ul.navbar-nav a:hover a:focus a:active {
-    /*color: #bf5700; real burnt orange*/
-    color: #d96607 !important;
-}
-
-.centeredOverImg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.leftOverImg {
-    position: absolute;
-    top: 16px;
-    left: 32px;
-}
-
-.leftDownOverImg {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+  padding: 0;
 }

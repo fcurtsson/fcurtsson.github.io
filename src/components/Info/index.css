@@ -1,0 +1,10 @@
+.profileImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.name {
+  color: #7597cd;
+  font-family: 'Heebo', sans-serif;
+}
