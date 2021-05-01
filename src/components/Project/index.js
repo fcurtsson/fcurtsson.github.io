@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import './index.css'
+import React from 'react'
 import { Link } from 'react-router-dom'
+
+import './index.css'
 
 export default (props) => {
   const {
@@ -18,9 +19,17 @@ export default (props) => {
           cardSide === 'r' ? 'order-lg-1' : 'order-lg-2'
         }`}
       >
-        <h1 style={{ color: color }} className="mt-2 mt-lg-5 font-weight-bold">
-          {title}
-        </h1>
+        <Link
+          style={{ textDecorationColor: color, textDecorationThickness: 3 }}
+          to={{
+            pathname: `/project/${title.toLowerCase().replace(/ /g, '')}`,
+            project: proj,
+          }}
+        >
+          <h1 style={{ color: color }} className="mt-2 mt-lg-5 font-weight-bold">
+            {title}
+          </h1>
+        </Link>
         <p className={'font-italic'}>{intro}</p>
         <p>What I learned</p>
         <ul>{learnings}</ul>

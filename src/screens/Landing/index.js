@@ -14,13 +14,10 @@ export default (props) => {
     <div>
       <div className="row font-weight-light">
         <Info />
-        <div id="projects" className={'col-12'}>
+        <div id="projects">
           {projects.map((project) => (
             <Project proj={project} />
           ))}
-        </div>
-        <div id="contact" className="col-12 my-5">
-          <Footer />
         </div>
       </div>
     </div>

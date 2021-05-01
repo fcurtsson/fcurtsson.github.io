@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
+import './index.css'
+
 export default (props) => {
   const location = useLocation()
 
@@ -43,20 +45,9 @@ export default (props) => {
     return <li>{tool}</li>
   })
 
-  let buttonDiv = ''
-  if (button !== null) {
-    buttonDiv = (
-      <a href={buttonLink} target="_blank">
-        <button type="button" className="btn btn-light">
-          {button}
-        </button>
-      </a>
-    )
-  }
-
   return (
     <div className="row text-left px-0">
-      <div className="col-12">
+      <div className="col-12 px-0">
         <Link to={'/'}>
           <i className="material-icons md-36 text-white leftOverImg px-2">arrow_back_ios</i>
         </Link>
@@ -64,7 +55,7 @@ export default (props) => {
         <img src={image} className="bannerImgLg d-none d-lg-block" />
         <h1 className="offset-1 text-white leftDownOverImg">{title}</h1>
       </div>
-      <div className="col-10 offset-1  mt-4 mb-2">
+      <div className="col-10 offset-1 mt-4 mb-2">
         {coursework !== null ? (
           <p className="font-italic">Coursework in {coursework}</p>
         ) : (
@@ -75,7 +66,13 @@ export default (props) => {
         <ul>{learnings}</ul>
         <p>Tools used</p>
         <ul>{toolsUsed}</ul>
-        {buttonDiv}
+        {button && (
+          <a href={buttonLink} target="_blank">
+            <button type="button" className="btn btn-light">
+              {button}
+            </button>
+          </a>
+        )}
         {collaborators !== null ? (
           <p className="mt-4">
             <span style={{ color: color }}>Collaborators:</span> {collaborators}
