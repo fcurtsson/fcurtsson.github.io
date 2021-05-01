@@ -26,7 +26,7 @@ export default (props) => {
             project: proj,
           }}
         >
-          <h1 style={{ color: color }} className="mt-2 mt-lg-5 font-weight-bold">
+          <h1 style={{ color: color }} className="mt-2 mt-lg-5">
             {title}
           </h1>
         </Link>
