@@ -22,9 +22,8 @@ export default (props) => {
             <li>Mobile app development (Swift, ReactNative)</li>
             <li>Audio coding (MAX/MSP, Pure Data, Python)</li>
           </ul>
-          <p>Want to get in touch?</p>
           <a href="mailto:fanny@curtsson.com" className="name">
-            fanny@curtsson.com
+            <p className="lead mt-4 pt-4">Want to get in touch?</p>
           </a>
         </div>
         <div className="offset-lg-1 col-12 col-lg-6 px-0 order-lg-2 order-1">
