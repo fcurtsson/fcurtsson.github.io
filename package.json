@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build",
+    "deploy": "gh-pages -b master -d build",
     "prettier": "prettier --write --ignore-path .gitignore '{config,src,scripts}/**/*.{js,d.ts,ts,tsx,css,scss}'"
   },
   "eslintConfig": {
