@@ -1,6 +1,6 @@
 import React from 'react'
 
-import profile from '../../assets/profile.jpeg'
+import profile from '../../assets/profile.png'
 import './index.css'
 
 export default (props) => {
