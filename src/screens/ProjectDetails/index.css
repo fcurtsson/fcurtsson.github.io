@@ -10,7 +10,7 @@
   object-fit: cover;
 }
 
-.leftOverImg {
+.backBtn {
   position: absolute;
   top: 16px;
   left: 16px;

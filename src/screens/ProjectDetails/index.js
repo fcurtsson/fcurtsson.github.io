@@ -63,8 +63,8 @@ export default (props) => {
     <div className="container-fluid">
       <div className="row text-left px-0">
         <div className="col-12 px-0">
-          <Link to={'/'} className="fixed-top">
-            <i className="material-icons text-white leftOverImg px-2">arrow_back_ios</i>
+          <Link to={'/'}>
+            <i className="material-icons text-white backBtn px-2">arrow_back_ios</i>
           </Link>
           <div className="bannerImgSm d-lg-none">
             <Image source={image} color={color} description={`Picture of project ${title}`} />
