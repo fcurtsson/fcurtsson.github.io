@@ -8,7 +8,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App container-fluid">
+    <div className="App">
       <Route path="/project/" render={() => <ProjectDetails />} />
       <Route exact path="/" render={() => <Landing />} />
       <div id="contact" className="col-12 my-5">

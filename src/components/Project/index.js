@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import Image from '../../components/Image'
+
 import './index.css'
 
 export default (props) => {
@@ -51,8 +53,12 @@ export default (props) => {
           cardSide === 'l' ? 'order-lg-1' : 'order-lg-2 ml-md-auto'
         }`}
       >
-        <img src={image} className="projectImgSm d-lg-none" />
-        <img src={image} className="projectImgLg d-none d-lg-block" />
+        <div className="projectImgSm d-lg-none">
+          <Image source={image} color={color} />
+        </div>
+        <div className="projectImgLg d-none d-lg-block">
+          <Image source={image} color={color} />
+        </div>
       </div>
     </div>
   )

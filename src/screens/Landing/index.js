@@ -1,7 +1,6 @@
 import React from 'react'
 import data from '../../projects.json'
 import Info from '../../components/Info'
-import Footer from '../../components/Footer'
 import Project from '../../components/Project'
 
 export default (props) => {
@@ -14,7 +13,7 @@ export default (props) => {
     <div>
       <div className="row font-weight-light">
         <Info />
-        <div id="projects">
+        <div id="projects" className="container-fluid">
           {projects.map((project) => (
             <Project proj={project} />
           ))}

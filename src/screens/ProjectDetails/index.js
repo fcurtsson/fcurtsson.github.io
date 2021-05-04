@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom'
 
 import data from '../../projects.json'
 
+import Image from '../../components/Image'
+
 import './index.css'
 
 export default (props) => {
@@ -60,16 +62,19 @@ export default (props) => {
   return (
     <div className="row text-left px-0">
       <div className="col-12 px-0">
-        <Link to={'/'}>
+        <Link to={'/'} className="fixed-top">
           <i className="material-icons text-white leftOverImg px-2">arrow_back_ios</i>
         </Link>
-        <img src={image} className="bannerImgSm d-lg-none" />
-        <img src={image} className="bannerImgLg d-none d-lg-block" />
+        <div className="bannerImgSm d-lg-none">
+          <Image source={image} color={color} />
+        </div>
+        <div className="bannerImgLg d-none d-lg-block">
+          <Image source={image} color={color} />
+        </div>
         <h1 className="offset-lg-1 col-lg-10 col-12 px-4 px-lg-0 text-white leftDownOverImg">
           {title}
         </h1>
       </div>
-      {/* <div className="col-10 offset-1 mt-4 mb-2"> */}
       <div className="offset-lg-1 col-12 col-lg-10 mt-lg-4 px-4 px-lg-0 mt-4 mb-2">
         {coursework !== null ? (
           <p className="font-italic">Coursework in {coursework}</p>
@@ -90,7 +95,7 @@ export default (props) => {
         )}
         {collaborators !== null ? (
           <p className="mt-4">
-            <span style={{ color: color }}>Collaborators:</span> {collaborators}
+            <span style={{ color }}>Collaborators:</span> {collaborators}
           </p>
         ) : (
           ''
