@@ -54,10 +54,10 @@ export default (props) => {
         }`}
       >
         <div className="projectImgSm d-lg-none">
-          <Image source={image} color={color} />
+          <Image source={image} color={color} description={`Picture of project ${title}`} />
         </div>
         <div className="projectImgLg d-none d-lg-block">
-          <Image source={image} color={color} />
+          <Image source={image} color={color} description={`Picture of project ${title}`} />
         </div>
       </div>
     </div>

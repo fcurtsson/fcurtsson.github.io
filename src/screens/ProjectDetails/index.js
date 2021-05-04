@@ -60,46 +60,48 @@ export default (props) => {
   })
 
   return (
-    <div className="row text-left px-0">
-      <div className="col-12 px-0">
-        <Link to={'/'} className="fixed-top">
-          <i className="material-icons text-white leftOverImg px-2">arrow_back_ios</i>
-        </Link>
-        <div className="bannerImgSm d-lg-none">
-          <Image source={image} color={color} />
+    <div className="container-fluid">
+      <div className="row text-left px-0">
+        <div className="col-12 px-0">
+          <Link to={'/'} className="fixed-top">
+            <i className="material-icons text-white leftOverImg px-2">arrow_back_ios</i>
+          </Link>
+          <div className="bannerImgSm d-lg-none">
+            <Image source={image} color={color} description={`Picture of project ${title}`} />
+          </div>
+          <div className="bannerImgLg d-none d-lg-block">
+            <Image source={image} color={color} description={`Picture of project ${title}`} />
+          </div>
+          <h1 className="offset-lg-1 col-lg-10 col-12 px-4 px-lg-0 text-white leftDownOverImg">
+            {title}
+          </h1>
         </div>
-        <div className="bannerImgLg d-none d-lg-block">
-          <Image source={image} color={color} />
+        <div className="offset-lg-1 col-12 col-lg-10 mt-lg-4 px-4 px-lg-0 mt-4 mb-2">
+          {coursework !== null ? (
+            <p className="font-italic">Coursework in {coursework}</p>
+          ) : (
+            <p className="font-italic">{work}</p>
+          )}
+          <p>{description}</p>
+          <p>What I learned</p>
+          <ul>{learnings}</ul>
+          <p>Tools used</p>
+          <ul>{toolsUsed}</ul>
+          {button && (
+            <a href={buttonLink} target="_blank">
+              <button type="button" className="btn btn-light">
+                {button}
+              </button>
+            </a>
+          )}
+          {collaborators !== null ? (
+            <p className="mt-4">
+              <span style={{ color }}>Collaborators:</span> {collaborators}
+            </p>
+          ) : (
+            ''
+          )}
         </div>
-        <h1 className="offset-lg-1 col-lg-10 col-12 px-4 px-lg-0 text-white leftDownOverImg">
-          {title}
-        </h1>
-      </div>
-      <div className="offset-lg-1 col-12 col-lg-10 mt-lg-4 px-4 px-lg-0 mt-4 mb-2">
-        {coursework !== null ? (
-          <p className="font-italic">Coursework in {coursework}</p>
-        ) : (
-          <p className="font-italic">{work}</p>
-        )}
-        <p>{description}</p>
-        <p>What I learned</p>
-        <ul>{learnings}</ul>
-        <p>Tools used</p>
-        <ul>{toolsUsed}</ul>
-        {button && (
-          <a href={buttonLink} target="_blank">
-            <button type="button" className="btn btn-light">
-              {button}
-            </button>
-          </a>
-        )}
-        {collaborators !== null ? (
-          <p className="mt-4">
-            <span style={{ color }}>Collaborators:</span> {collaborators}
-          </p>
-        ) : (
-          ''
-        )}
       </div>
     </div>
   )

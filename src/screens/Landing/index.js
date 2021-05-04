@@ -10,7 +10,7 @@ export default (props) => {
   let projects = data.projects
 
   return (
-    <div>
+    <div className="container-fluid">
       <div className="row font-weight-light">
         <Info />
         <div id="projects" className="container-fluid">

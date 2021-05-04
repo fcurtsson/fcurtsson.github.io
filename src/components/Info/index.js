@@ -29,10 +29,16 @@ export default (props) => {
         </div>
         <div className="offset-lg-1 col-12 col-lg-6 px-0 order-lg-2 order-1 header">
           <div className="profileImgSm  d-lg-none">
-            <Image source={'https://drive.google.com/uc?id=1Nn4XotOM5W2aUEIhkthLvA7KDPQDcLci'} />
+            <Image
+              source={'https://drive.google.com/uc?id=1Nn4XotOM5W2aUEIhkthLvA7KDPQDcLci'}
+              description={'Picture of me'}
+            />
           </div>
           <div className="profileImgLg d-none d-lg-block">
-            <Image source={'https://drive.google.com/uc?id=1Nn4XotOM5W2aUEIhkthLvA7KDPQDcLci'} />
+            <Image
+              source={'https://drive.google.com/uc?id=1Nn4XotOM5W2aUEIhkthLvA7KDPQDcLci'}
+              description={'Picture of me'}
+            />
           </div>
         </div>
       </div>
