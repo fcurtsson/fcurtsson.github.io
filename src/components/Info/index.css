@@ -4,7 +4,12 @@
   object-fit: cover;
 }
 
-.name {
+.highlight {
   color: #7597cd;
   font-family: 'Heebo', sans-serif;
+}
+
+a.highlight {
+  color: #7597cd;
+  text-decoration-thickness: 2px;
 }

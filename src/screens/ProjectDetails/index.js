@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
+import data from '../../projects.json'
+
 import './index.css'
 
 export default (props) => {
@@ -12,16 +14,26 @@ export default (props) => {
   })
 
   if (location.project === undefined) {
-    return (
-      <div className="justify-content-center my-5 py-5">
-        <h2>Something went wrong</h2>
-        <Link to={'/'}>
-          <button type="button" className="btn btn-light">
-            Go to main page
-          </button>
-        </Link>
-      </div>
+    const projects = data.projects
+    let project = projects.find(
+      (proj) =>
+        proj.title.toLowerCase().replace(/\s/g, '') === location.pathname.replace('/project/', '')
     )
+
+    if (!project) {
+      return (
+        <div className="justify-content-center my-5 py-5">
+          <h2>Something went wrong</h2>
+          <Link to={'/'}>
+            <button type="button" className="btn btn-light">
+              Go to main page
+            </button>
+          </Link>
+        </div>
+      )
+    } else {
+      location.project = project
+    }
   }
 
   let {
@@ -49,13 +61,16 @@ export default (props) => {
     <div className="row text-left px-0">
       <div className="col-12 px-0">
         <Link to={'/'}>
-          <i className="material-icons md-36 text-white leftOverImg px-2">arrow_back_ios</i>
+          <i className="material-icons text-white leftOverImg px-2">arrow_back_ios</i>
         </Link>
         <img src={image} className="bannerImgSm d-lg-none" />
         <img src={image} className="bannerImgLg d-none d-lg-block" />
-        <h1 className="offset-1 text-white leftDownOverImg">{title}</h1>
+        <h1 className="offset-lg-1 col-lg-10 col-12 px-4 px-lg-0 text-white leftDownOverImg">
+          {title}
+        </h1>
       </div>
-      <div className="col-10 offset-1 mt-4 mb-2">
+      {/* <div className="col-10 offset-1 mt-4 mb-2"> */}
+      <div className="offset-lg-1 col-12 col-lg-10 mt-lg-4 px-4 px-lg-0 mt-4 mb-2">
         {coursework !== null ? (
           <p className="font-italic">Coursework in {coursework}</p>
         ) : (

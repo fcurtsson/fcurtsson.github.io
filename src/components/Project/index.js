@@ -20,7 +20,7 @@ export default (props) => {
         }`}
       >
         <Link
-          style={{ textDecorationColor: color, textDecorationThickness: 3 }}
+          style={{ textDecorationColor: color, textDecorationThickness: 2 }}
           to={{
             pathname: `/project/${title.toLowerCase().replace(/ /g, '')}`,
             project: proj,

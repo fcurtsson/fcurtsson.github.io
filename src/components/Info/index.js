@@ -11,8 +11,8 @@ export default (props) => {
           <h1 className="display-4 mt-5 mt-lg-5">Hello, World!</h1>
           <h5 className="font-italic"></h5>
           <p className="lead mt-4">
-            I am <span className={'name font-weight-bold'}>Fanny Curtsson</span>, a student at the
-            Media Technology programme at KTH in Stockholm, Sweden. Currently finishing up my
+            I am <span className={'highlight font-weight-bold'}>Fanny Curtsson</span>, a student at
+            the Media Technology programme at KTH in Stockholm, Sweden. Currently finishing up my
             masters in Interactive Media Technology with a specialization in sonic media, while
             working part time as a Software Engineer at Northvolt.
           </p>
@@ -22,7 +22,7 @@ export default (props) => {
             <li>Mobile app development (Swift, ReactNative)</li>
             <li>Audio coding (MAX/MSP, Pure Data, Python)</li>
           </ul>
-          <a href="mailto:fanny@curtsson.com" className="name">
+          <a href="mailto:fanny@curtsson.com" className="highlight">
             <p className="lead mt-4 pt-4">Want to get in touch?</p>
           </a>
         </div>

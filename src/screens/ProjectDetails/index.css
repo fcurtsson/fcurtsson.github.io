@@ -13,11 +13,10 @@
 .leftOverImg {
   position: absolute;
   top: 16px;
-  left: 32px;
+  left: 16px;
 }
 
 .leftDownOverImg {
   position: absolute;
   bottom: 8px;
-  left: 16px;
 }
